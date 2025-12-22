@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbarContainer {
+  height: 70px;
+  width: 100%;
+  background: linear-gradient(to right, #324488, #1c3e6b);
+  display: flex;
+}
+.navbarContainer .logoBlock {
+  flex-basis: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbarContainer .logoBlock img {
+  height: 60px;
+  width: 100px;
+  border-radius: 20px;
+}
+.navbarContainer .menuBlock {
+  height: 70px;
+  flex-basis: 85%;
+}
+.navbarContainer .menuBlock ul {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  list-style-type: none;
+}
+.navbarContainer .menuBlock ul li a {
+  color: aliceblue;
+  text-decoration: none;
+  font-size: 19px;
+}
+.navbarContainer .menuBlock ul li a:hover {
+  border-bottom: 2px solid aliceblue;
+}
+
+/* Footer CSS Starts Here */
+.footerContainer {
+  height: 50px;
+  width: 100%;
+   background: color (to right, #7aa5dd); 
+  /* background: linear-gradient(to right, #546abb, #1c3e6b);*/
+   
+  /* position: fixed;
+  bottom: 0; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Footer CSS Ends Here */
+
+/* Header Container CSS Starts Here */
+.headerContainer {
+  height: 50px;
+  width: 100%;
+  /* background: linear-gradient(to right, #8295d9, #1c3e6b); */
+   background-color: #97addb;
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+.headerContainer aside {
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.headerContainer h2 {
+  color: gainsboro;
+}
+.headerContainer aside a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 19px;
+}
+
+.headerContainer aside a:hover {
+  border-bottom: 2px solid aliceblue;
+}
+
+/* Header Container CSS Ends Here */
+
+/* Main Section Container CSS Starts Here */
+
+.mainSectionContainer {
+  text-align: center;
+  background-color: #c8d7f5;
+  padding: 80px 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.mainSectionContainer a {
+  height: 30px;
+  width: 100px;
+  padding: 5px;
+  background-color: #000000;
+  border-radius: 20px;
+  text-decoration: none;
+  color: aliceblue;
+  transition: all 1s ease;
+}
+
+.mainSectionContainer a:hover {
+  transform: scale(1.1, 1.1);
+}
+
+/* Main Section Container CSS Ends Here */
+
+/* Basic Products Container Starts Here */
+
+.products {
+  background-color: aliceblue;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 10px;
+}
+.products .productsItem {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: all 1s ease;
+}
+.products .productsItem:hover {
+  transform: scale(1.1, 1.1);
+}
+.products .productsItem img {
+  height: 300px;
+  width: 450px;
+  border-radius: 10px;
+}
+/* Basic Products Container Ends Here */
