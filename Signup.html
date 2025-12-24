@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SignupPage</title>
+    <link rel="stylesheet" href="./Signup.css" />
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <legend>SignUP</legend><br><br>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="Name" placeholder="Enter Name" />
+        <br /><br />
+        <label for="email">Email</label>
+        <input type="email" id="email" name="Email" placeholder="Enter Email" />
+        <br /><br />
+        <label for="password">Password:</label>
+        <input
+          type="password"
+          id="password"
+          name="Password"
+          placeholder="Enter Password"
+        />
+        <br /><br />
+        <label for="phno">Phone Number</label>
+        <input
+          type="tel"
+          id="phno"
+          name="Phone Number"
+          placeholder="Enter Phone Number"
+          minlength="10"
+          maxlength="10"
+        />
+        <br /><br />
+        <label for="dob">Date of Birth</label>
+        <input type="date" id="dob" name="DOB" />
+        <br /><br />
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="Age" placeholder="Enter Age" />
+        <br /><br />
+        <label for="gender">Gender</label>
+        <input type="radio"  value="male" name="gender" id="gender" />Male
+        <input type="radio" value="female" name="gender" />Female
+        <input type="radio" value="others" name="gender"  />Others <br /><br />
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </fieldset>
+    </form>
+  </body>
+  <script src="./Signup.js"></script>
+</html>
