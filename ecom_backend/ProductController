@@ -1,0 +1,112 @@
+package com.sush.ecom_backend.controller;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class ProductController {
+
+    @GetMapping("/products")
+    public List<Map<String, Object>> getAllProducts() {
+
+        List<Map<String, Object>> products = new ArrayList<>();
+
+        products.add(createProduct(
+                1,
+                "Red Crop Top",
+                "Crop Tops",
+                "https://img.tatacliq.com/images/i8/437Wx649H/MP000000014753009_437Wx649H_202210041901291.jpeg",
+                444,
+                "15% OFF"
+        ));
+
+        products.add(createProduct(
+                2,
+                "Black Crop Top",
+                "Crop Tops",
+                "https://rukmini1.flixcart.com/image/300/300/xif0q/shopsy-top/7/u/2/m-croptop-dazeel-original-imags25uyrgtxzzg.jpeg",
+                444,
+                "15% OFF"
+        ));
+
+        products.add(createProduct(
+                3,
+                "Navy Blue Crop Top",
+                "Crop Tops",
+                "https://m.media-amazon.com/images/I/61WkjdM3daL._UY1100_.jpg",
+                444,
+                "15% OFF"
+        ));
+
+        products.add(createProduct(
+                4,
+                "Mint Green Crop Top",
+                "Crop Tops",
+                "https://i5.walmartimages.com/asr/e98f857a-a82c-43cd-8853-5cf333cfb671.e2cc10f74bb966f90e1ff67fb4ab1644.jpeg",
+                444,
+                "15% OFF"
+        ));
+
+        products.add(createProduct(
+                5,
+                "Lilac Crop Top",
+                "Crop Tops",
+                "https://gigstore.in/cdn/shop/files/RICH039_3.jpg?v=1742817503&width=1200",
+                444,
+                "15% OFF"
+        ));
+
+        products.add(createProduct(
+                6,
+                "Black Crop Hoodie",
+                "Cropped Hoodies",
+                "https://5.imimg.com/data5/SELLER/Default/2021/1/WR/UX/BC/121749566/basic-crop-hoodie.png",
+                855,
+                "15% OFF"
+        ));
+
+        products.add(createProduct(
+                7,
+                "Pink Crop Hoodie",
+                "Cropped Hoodies",
+                "https://m.media-amazon.com/images/I/41VU-rtGpuL._AC_UY1100_.jpg",
+                855,
+                "15% OFF"
+        ));
+
+        products.add(createProduct(
+                8,
+                "Lilac Crop Hoodie",
+                "Cropped Hoodies",
+                "https://cdn.lookastic.com/light-violet-hoodie/cropped-pullover-hoodie-original-959397.jpg",
+                855,
+                "15% OFF"
+        ));
+
+        return products;
+    }
+
+    // helper method to reduce repetition
+    private Map<String, Object> createProduct(
+            int id,
+            String name,
+            String category,
+            String image,
+            int price,
+            String discount
+    ) {
+        Map<String, Object> product = new HashMap<>();
+        product.put("id", id);
+        product.put("name", name);
+        product.put("category", category);
+        product.put("image", image);
+        product.put("price", price);
+        product.put("discount", discount);
+        return product;
+    }
+}
